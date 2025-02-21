@@ -1,2 +1,1 @@
-# LoginX
-anderson.nunes@raphaeldisanto.com
+# logindoxis

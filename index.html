@@ -7,19 +7,27 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <header>
+        <img src="./img/logo_x.png" alt="Logo do X" class="logo" />
+    </header>
     <main>
-      <div class="cabeca">
-        <img src="./img/logo_x.png" alt="" id="logo_x" class="logo" />
-      </div>
+
       <h2>Entrar no X</h2>
-      <div class="bt-login" id="bt-google">Fazer login com o Google</div>
-      <div class="bt-login" id="bt-apple">Entrar com Apple</div>
+
+      <div class="login-opcoes">
+        <div class="bt-login" id="bt-google" >Fazer login com o Google</div>
+        <div class="bt-login" id="bt-apple" >Entrar com Apple</div>
+      </div>
+
       <p id="ou">ou</p>
-      <form action="#">
-        <input type="email" placeholder="Celular, e-mail ou nome de usuário" class="caixa" id="email" />
-        <button id="esqueceu">Esqueceu a Senha?</button>
-        <button id="bt-avancar">Avançar</button>
-      </form>
+
+      <div class="formulario">
+        <input type="text" placeholder="Celular, e-mail ou nome de usuário" class="caixa" />
+        <div id="bt-avancar">Avançar</div>
+        <div id="esqueceu" class="bt-login">Esqueceu a senha?</div>
+      </div>
+      
+
       <p id="sem-conta">Não tem uma conta? <a href="#">Inscreva-se</a></p>
     </main>
   </body>

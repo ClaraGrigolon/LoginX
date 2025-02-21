@@ -1,170 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-main {
-  width: 100%;
-  height: 100vh;
-  background: #9b9b9b;
-  /* padding-left: 32px;
-  padding-right: 32px; */
-}
-#logo_x {
-  width: 26px;
-  height: 26px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin: auto;
-}
-.cabeca {
-  height: 50px;
-  margin-left: auto;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin: auto;
-}
-main h2 {
-  width: 100%;
-  float: left;
-  display: block;
   font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 16px;
+}
+
+main {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .logo {
+    width: 26px;
+    height: 26px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+  
+h2 {
   font-size: 26px;
   font-weight: 700;
-  line-height: 32px;
-  color: #fff;
-  margin: 60px;
-  margin-top: 200px;
+  margin: 0 auto 34px;
+  justify-content: left center;
+  align-items: left center;
+  display: flex;
+  margin-left: 50px;
 }
-.bt-login{
-  border-radius: 35px;
-  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+.bt-login {
   width: 300px;
   height: 40px;
+  border-radius: 35px;
   background: #fff;
-  margin-left: 15%;
-  margin-top: 20px;
-  line-height: 20px;
-}
-#bt-google{
-  background-image: url(../img/logo_google.png);
-  background: #fff;
-  background-repeat: no-repeat;
-  background-position-x: left;
-  background-position-y: center;
+  color: #000;
+  margin: 30px 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
-  /* margin-top: 260px; */
+  margin-left: 50px;
 }
+
+#bt-google {
+  background-image: url(../img/logo_google.png);
+  background-repeat: no-repeat;
+  background-position: 35px center;
+  background-size: 20px;
+}
+  
+
 #bt-apple{
   background-image: url(../img/logo_apple.png);
-  background: #fff;
   background-repeat: no-repeat;
-  background-position-x: left;
-  background-position-y: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  background-size: auto;
-} 
-.caixa{
-  width: 80%;
-  height: 55px;
-  float: left;
-  margin-left: 10%;
-  border: 0;
-  background-color: #ffffff33;
+background-position: 65px center;
+  background-size: 20px;
+  
+}
+
+.caixa {
+  width: 300px;
+  height: 50px;
+  margin: 10px 0;
+  padding: 0 16px;
+  border: 2px solid #ffffff2c;
   border-radius: 8px;
-  margin-top: 5%;
-  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #000000;
   color: #fff;
-  text-indent: 40px;
   font-size: 1.1em;
-  outline: none;
+  margin-left: -1px;
 }
-.caixa::placeholder{
-  color: #ffffff69;
+
+.caixa::placeholder {
+  color: #929292c4;
 }
-#email{
-  background:#ffffff33;
-  background-size: 8%;
-  /* background-position-y: center;
-  background-position-x: 8px; */
+
+#esqueceu {
+    margin-top: 20px;
+    width: 300px;
+    height: 34px;
+    border: 2px solid #ffffff2c ;
+    border-radius: 35px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #bt-avancar {
+    width: 300px;
+    height: 34px;
+    border: none;
+    border-radius: 35px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 50px;
+  }
+  
+#ou {
+  margin: 10px 0;
+  font-size: 17px;
 }
-#senha{
-  background:#ffffff33;
-  background-size: 8%;
-  /* background-position-y: center;
-  background-position-x: 8px; */
+
+#sem-conta {
+  margin-top: 20px;
+  font-size: 1em;
+  color: #ffffff49  ;
+  margin-right: 50px;
+  margin-top: 60px;
 }
-#esqueceu{
-  width: 100%;
-  float: left;
-  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #fff;
-  text-align: right;
-  padding-right: 10%;
-  margin-top: 3%;
-}
-#lembrar{
-  width: 10%;
-  float: left;
-  margin-top: 13px;
-  margin-left: 8%;
-}
-label{
-  float: left;
-  line-height: 40px;
-  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #fff;
-}
-#bt-entrar{
-  width: 80%;
-  float: left;
-  height: 55px;
-  margin-left: 10%;
-  border: 0;
-  border-radius: 35px;
-  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #056be6;
-  margin-top: 5%;
-}
-#ou{
-  width: 100%;
-  float: left;
-  text-align: center;
-  margin-top: 10%;
-  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #fff;
-  flex-direction: row;
-}
-#entrar{
-  width: 100%;
-  float: left;
-  text-align: center;
-  margin-top: 5%;
-  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #fff;
-}
-#sem-conta{
-  width: 100%;
-  float: left;
-  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #fff;
-  text-align: center;
-  margin-top: 25%;
-  font-size: 1.2em;
-}
-#sem-conta a{
+
+#sem-conta a {
+  color: rgb(0, 119, 255);
+  font-weight: none;
   text-decoration: none;
-  color: #fff;
-  font-weight: bold;
 }
